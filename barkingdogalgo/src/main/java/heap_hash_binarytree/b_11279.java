@@ -1,4 +1,4 @@
-package heap;
+package heap_hash_binarytree;
 
 import java.io.BufferedReader;
 import java.io.IOException;
