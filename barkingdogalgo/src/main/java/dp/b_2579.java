@@ -4,9 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// 답 보기 :
-// 메모리 :
-// 시간 :
+// 답 보기 : x
+// 메모리 :14040
+// 시간 :108 ms
 public class b_2579 {
 
     public static void main(String[] args) throws IOException {
