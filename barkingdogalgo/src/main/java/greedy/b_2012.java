@@ -9,7 +9,7 @@ import java.util.Arrays;
 // 메모리 :  kb
 // 시간 :   ms
 public class b_2012 {
-    static int count;
+    static long count;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
