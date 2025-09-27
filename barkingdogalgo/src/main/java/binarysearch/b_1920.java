@@ -60,7 +60,6 @@ public class b_1920 {
         if(targetArray[mid] > inputNumber){
             return checkBinarySearch(targetArray, start, mid -1, inputNumber);
         }
-
         return false;
     }
 }
