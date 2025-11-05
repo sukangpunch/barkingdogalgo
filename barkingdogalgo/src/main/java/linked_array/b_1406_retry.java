@@ -41,5 +41,4 @@ public class b_1406_retry {
 
         System.out.println(sb);
     }
-
 }
