@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+// sw 모의 역량 테스트
 // 요리사
 public class sw_cooker {
     static int N;
