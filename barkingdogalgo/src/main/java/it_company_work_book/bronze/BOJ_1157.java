@@ -1,4 +1,4 @@
-package it_company_work_book;
+package it_company_work_book.bronze;
 
 import java.io.BufferedReader;
 import java.io.IOException;
