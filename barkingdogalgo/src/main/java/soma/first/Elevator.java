@@ -1,4 +1,4 @@
-package soma;
+package soma.first;
 
 // 엘리베이터 문제
 
@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * [가정 및 조건]

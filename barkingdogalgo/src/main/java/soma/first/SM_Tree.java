@@ -1,4 +1,4 @@
-package soma;
+package soma.first;
 
 public class SM_Tree {
 

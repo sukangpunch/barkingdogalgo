@@ -1,4 +1,4 @@
-package soma;
+package soma.first;
 
 import java.util.Queue;
 import java.util.LinkedList;

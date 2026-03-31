@@ -1,4 +1,4 @@
-package soma;
+package soma.first;
 
 import java.util.Arrays;
 import java.util.Collections;
