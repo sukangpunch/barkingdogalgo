@@ -7,28 +7,14 @@ import java.util.Deque;
 // 선인장 숨기기
 
 /**
- * 처음에 완탐으로 풀었다가 어마어마한 시간초과로 바로 제미나이 호출
- * 2차원 슬라이딩 윈도우 느낌인데 가로 버전을 구한 뒤 해당 값 기반 세로버전을 구해서 만든 테이블 기반으로 답을 찾는다.
- * 1. deque 에는 인덱스를 저장. 해당 데이터가 윈도우 범위를 벗어났는지 체크.
- * 2. 새로 윈도우에 들어온 값이 기존 덱의 뒤쪽에 있는 값보다 작거나 같다면 그 기존 값들은 절대 최솟값이 될 수 없으므로 버린다.\
- * 3. 새 인덱스를 덱 뒤에 추가, 윈도우가 채워 졌을 때, 덱의 가장 앞부분의 인덱스 값을 꺼내 쓰면 그게 바로 윈도우의 최솟값
- * 위 연산으로 가로 세로 최대치 구하고 inf인 부분이 무조건 우선, 그 당므은 최대 값 idx를 리턴하면 된다.
+ * 두 번째 풀이
+ * 또 답을 봐버렸당.
+ * 풀이 방식은 알고 있었는데 슬라이딩 덱을 활용한 슬라이딩 윈도우가 익숙하지 않아서 쉽지않음
+ * 행 기준 map 을 만들어서 선인장 가로 범위(w) 에 맞게 각 좌표범위마다 최솟값을 구한다. (dq 인덱스는 무조건 오름차순 유지)
+ * 그렇게 만들어진 값 기반으로 선인장 세로 범위를 동일하게 최솟값을 구한 다음, 만들어진 배열에서 최댓값이 정답
  */
-public class PGS_468379 {
-
-    public static void main(String[] args) {
-        int m = 4;
-        int n = 5;
-        int h = 2;
-        int w = 2;
-        int [][] drops = {{0, 0}, {3, 1}, {1, 3}, {2, 4}, {1, 1}, {2, 2}, {2, 3}, {0, 4}};
-
-        int []answer = solution(m, n, h, w, drops);
-
-        System.out.println(answer[0] + " " + answer[1]);
-    }
-
-    static public int[] solution(int m, int n, int h, int w, int[][] drops) {
+public class PGS_468379_retry {
+    public int[] solution(int m, int n, int h, int w, int[][] drops) {
         int INF = Integer.MAX_VALUE;
 
         int [][] map = new int[m][n];
